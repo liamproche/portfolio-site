@@ -1,3 +1,36 @@
+
 *{
+    margin: 0;
+    padding: 0;
+}
+body{
     background: black;
+    font-family:'Merienda One', cursive;
+    color: white;
+
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+}
+.nav-ul a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    padding: 20px;
+}
+.text-box{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    height: 50vh;
+    width: 80vw
 }
