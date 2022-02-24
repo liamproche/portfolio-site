@@ -16,11 +16,15 @@ nav{
     width: 100%;
     margin-top: 8vh;
 }
-#nav-links{
+#nav-links-container{
     display: flex;
     list-style-type: none;
     width: 100%;
     justify-content: space-around;
+}
+#nav-links-container a{
+    color: white;
+    text-decoration: none;
 }
 #bio-link{
     animation: fadeIn linear 2s;
