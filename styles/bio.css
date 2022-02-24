@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    font-family:'Merienda One', cursive;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+.nav-ul a{
+    color: white;
+    text-decoration: none;
+}
+#bio-text{
+    background: white;
+    height: 50vh;
+    width: 70vw;
+    justify-self: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+#photo-container{
+    background: white;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
