@@ -1,3 +1,41 @@
 *{
+    margin: 0;
+    padding: 0;
+}
+body{
     background: black;
+    font-family:'Merienda One', cursive;
+    color: white;
+    animation: fadeIn linear .5s;
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+}
+.nav-ul a{
+    color: white;
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+}
+.project-box{
+    background: white;
+    color: black;
+    display: inline;
+    height: 25vh;
+    width: 50%;
+    margin: 0 auto;
+}
+.project-box h2{
+    display: inline
+}
+@keyframes fadeIn{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }

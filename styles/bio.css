@@ -5,6 +5,7 @@
 body{
     background: black;
     font-family:'Merienda One', cursive;
+    animation: fadeIn linear .5s;
 }
 main{
     display: flex;
@@ -42,4 +43,8 @@ header{
     width: 20vh;
     border-radius: 20px;
     margin-bottom: 10vh;
+}
+@keyframes fadeIn{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
