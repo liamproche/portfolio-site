@@ -31,9 +31,10 @@ main{
     height: 25vh;
     width: 50%;
     margin: 0 auto;
+    border-radius: 20px;
 }
 .project-box h2{
-    display: inline
+    display: inline;
 }
 .link-image{
     height: 5vh;
