@@ -42,6 +42,8 @@ footer{
     justify-content: space-between;
     position: relative;
     top: 70px;
+    opacity: 0;
+    transition: opacity 5s;
 }
 #nav-links-container a{
     color:white;
