@@ -24,17 +24,28 @@ main{
     grid-template-columns: 1fr;
     row-gap: 5vh;
 }
+p{
+    height: 0;
+}
 .project-box{
     background: white;
     color: black;
-    display: inline;
+    display: flex;
     height: 25vh;
     width: 50%;
     margin: 0 auto;
     border-radius: 20px;
+    align-items: flex-end;
+}
+.show-description p{
+    height: 30px;
 }
 .project-box h2{
     display: inline;
+}
+.description-box{
+    background: rgba(0, 0, 0, .6);
+    opacity: 1;
 }
 .link-image{
     height: 5vh;
