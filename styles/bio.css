@@ -2,32 +2,46 @@
     margin: 0;
     padding: 0;
 }
+section{
+    border: 2px solid green;
+}
 body{
-    background: black;
     font-family:'Merienda One', cursive;
     animation: fadeIn linear .5s;
+    height: 100vh;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    background: url(images/lava-background.jpg);
+    height: 70vh;
 }
-header{
+    header{
     display: flex;
     flex-direction: column;
     color: white;
+    background: black;
+    height: 15vh;
 }
 
 .nav-ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    margin-top: 5vh;
 }
 .nav-ul a{
     color: white;
     text-decoration: none;
+}
+.scrim{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(30deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .2));
+    background: -webkit-linear-gradient(30deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .2));
 }
 #bio-text{
     background: white;
@@ -35,7 +49,7 @@ header{
     width: 70vw;
     justify-self: center;
     border-radius: 20px;
-    padding: 20px;
+    margin-bottom: 40px;
 }
 #photo-container{
     background: white;
@@ -43,10 +57,13 @@ header{
     width: 20vh;
     border-radius: 20px;
     margin-bottom: 10vh;
+    margin-top: 40px;
 }
 footer{
     display: flex;
     justify-content: center;
+    background: black;
+    height: 15vh;
 }
 .link-container{
     display: flex;
@@ -59,7 +76,6 @@ footer{
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 7vh;
 }
 @keyframes fadeIn{
     0% {opacity:0;}

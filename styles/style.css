@@ -11,6 +11,9 @@ header{
     background: black;
     height: 15vh;
 }
+h1{
+    margin-top: 50px;
+}
 main{
     height: 70vh;
     background: white;
@@ -48,4 +51,7 @@ footer{
 #nav-links-container a{
     color:white;
     text-decoration: none;
+}
+.landing-page-text:hover{
+    cursor: pointer;
 }
