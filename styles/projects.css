@@ -47,6 +47,7 @@ p{
 .description-box{
     background: rgba(0, 0, 0, .6);
     opacity: 1;
+    width: 100%;
 }
 .link-image{
     height: 5vh;
