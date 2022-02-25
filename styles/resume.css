@@ -34,6 +34,19 @@ h1{
     height: 50vh;
     width: 80vw
 }
+.link-image{
+    height: 5vh;
+}
+.link-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
 @keyframes fadeIn{
     0% {opacity:0;}
     100% {opacity:1;}
