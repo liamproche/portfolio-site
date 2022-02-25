@@ -44,6 +44,23 @@ header{
     border-radius: 20px;
     margin-bottom: 10vh;
 }
+footer{
+    display: flex;
+    justify-content: center;
+}
+.link-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.link-image{
+    height: 5vh;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
 @keyframes fadeIn{
     0% {opacity:0;}
     100% {opacity:1;}

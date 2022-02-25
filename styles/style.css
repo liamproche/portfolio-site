@@ -5,7 +5,6 @@
 body{
     background: url('images/lava-background.jpg');
     color: #dcdcdc;
-
     justify-content: center;
     font-family:'Merienda One', cursive;
     animation: fadeIn linear 2s;
