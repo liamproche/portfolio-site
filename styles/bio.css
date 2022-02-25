@@ -17,7 +17,10 @@ main{
     background: url(images/lava-background.jpg);
     height: 70vh;
 }
-    header{
+nav{
+    width: 100%;
+}
+header{
     display: flex;
     flex-direction: column;
     color: white;
@@ -29,6 +32,8 @@ main{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    border: 2px solid black;
+    background: rgba(0, 0, 0, .6)
 }
 .nav-ul a{
     color: white;
@@ -69,6 +74,7 @@ footer{
     display: flex;
     width: 50%;
     justify-content: space-around;
+    align-items: flex-end;
 }
 .link-image{
     height: 5vh;
