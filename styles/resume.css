@@ -29,6 +29,9 @@
 .x{
     height: 38px;
 }
+.show-nav{
+    left: 0;
+}
 /*End Side Navigation*/
 /* .row-1{
     display: grid;
@@ -46,6 +49,4 @@ section{
 div{
     border: 2px solid green;
 }
-.show-nav{
-    left: 0;
-}
+
