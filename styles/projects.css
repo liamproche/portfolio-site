@@ -15,8 +15,8 @@ main{
 section{
     border: 2px solid green;
     display: grid;
-    grid-template-columns: .7fr;
-    gap: 20%
+    grid-template-columns: .9fr;
+    gap: 30%
 
 }
 div{
@@ -24,11 +24,9 @@ div{
     display: inline-block;
 }
 nav{
-margin-left: 20%;
+    margin-left: 10%;
 }
 .nav-ul{
-    display: flex;
-    flex-direction: column;
     border: 2px solid yellow;
     list-style-type: none;
 }

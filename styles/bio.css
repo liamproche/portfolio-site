@@ -1,22 +1,27 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 main{
     border: 2px solid red;
     display: grid;
     grid-template-columns: .5fr 1fr;
-    gap: 10%;
     margin-top: 7%;
 }
 nav{
-    margin-left: 20%;
+    border: 2px solid yellow;
+    position: fixed;
+    float: right;
+
+}
+section{
+    border: 2px solid blue;
 }
 .nav-ul{
-        display: flex;
-        flex-direction: column;
-        border: 2px solid yellow;
-        list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
 }
 li a{
     text-decoration: none;
@@ -26,7 +31,6 @@ ul li{
 }
 div{
     border: 2px solid green;
-    margin-right:10%;
 }
 
 /* adjust after finding photo */
