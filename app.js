@@ -10,5 +10,6 @@ $('.description-box').on('click', (e)=>{
 
 $($landingPageText).on('click', ()=>{
     $('#nav-links-container').css('opacity', 1)
+    
 })
 

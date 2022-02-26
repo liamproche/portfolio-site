@@ -1,68 +1,53 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-size: 18px;
 }
-body{
-    background: black;
-    font-family:'Merienda One', cursive;
-    color: white;
-    animation: fadeIn linear .5s;
+main{
+    border: 2px solid red;
+    grid-template-columns: .3fr 1fr;
+    display: grid;
+    height: 50%;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 7%;
+}
+section{
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: .7fr;
+    gap: 20%
+
+}
+div{
+    border: 2px solid blue;
+    display: inline-block;
+}
+nav{
+margin-left: 20%;
 }
 .nav-ul{
     display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
     list-style-type: none;
-    justify-content: space-around;
-    margin-top: 2vh;
-    margin-bottom: 6vh;
 }
-.nav-ul a{
-    color: white;
+li a{
     text-decoration: none;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 5vh;
+ul li{
+    border: 2px solid purple;
 }
-p{
-    height: 0;
-    transition: height .5s;
-}
-.project-box{
-    background: white;
-    color: black;
-    display: flex;
-    height: 25vh;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 20px;
-    align-items: flex-end;
-}
-.show-description p{
-    height: 30px;
-}
-.project-box h2{
-    display: inline;
-}
-.description-box{
-    background: rgba(0, 0, 0, .6);
-    opacity: 1;
+.text-box{
+    border: 2px solid gray;
     width: 100%;
 }
-.link-image{
-    height: 5vh;
+.project-image{
+    width: 5rem;
+    margin: 0 auto;
 }
-.link-container{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-footer{
+.project-container{
     display: flex;
     justify-content: center;
-    margin-top: 7vh;
-}
-@keyframes fadeIn{
-    0% {opacity:0;}
-    100% {opacity:1;}
+    flex-direction: column;
 }
