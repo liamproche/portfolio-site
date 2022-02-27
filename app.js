@@ -1,7 +1,7 @@
 console.log('hello');
 const $landingPageText = $('.landing-page-text');
 const $navLinksContainer = $('#nav-links-container');
-const $hamburger = $('.hamburger');
+const $hamburger = $('.menu-image');
 const $sideNav = $('.side-nav');
 const $x = $('.x')
 const $textBox = $('.text-box');
@@ -20,11 +20,7 @@ $($landingPageText).on('click', ()=>{
 $($hamburger).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
 });
+
 $($x).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
-})
-
-
-$($textBox).on('click', ()=>{
-    $($projectDescription).toggleClass('.show-text-box')
 })

@@ -1,7 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Fredoka', sans-serif;
 }
+body{
+   
+}
+/* FOR LAYOUT PUPOSES */
+ul{
+    border: 2px solid black;
+}
+div{
+    border: 2px solid green;
+}
+li{
+    border-bottom: 2px solid blue;
+}
+nav{border: 2px solid red;}
+/* END LAYOUT PURP */
+
 body{
 
     font-size: 18px;
@@ -11,6 +28,8 @@ body{
 header{
     background: white;
     height: 10vh;
+    display: flex;
+    justify-content: flex-end;
 }
 h1{
     font-size: 5rem;
@@ -44,32 +63,49 @@ main{
 
 /* SIDE NAV */
 .side-nav{
-    position: fixed;
-    display: inline-block;
-    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    width: 50%;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: inline-block;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background-color: blue;
-    top: 0;
-    right: -100%;
-    border: 1px solid black;
+    border-right: 1px solid #ccc;
     transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
     -webkit-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
     -moz-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .show-nav{
     right: 0;
 }
-
-
-/* .x{
+.menu-image{
     height: 38px;
-} */
-
-
+}
+.x{
+    height: 38px;
+    align-self: flex-end;
+}
+li{
+    list-style: none;
+    margin-top: 30%;
+}
+a{
+    display: block;
+    color:black;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.nav-content{
+    width: 100%;
+    text-align: center;
+}
 
 /* END SIDE NAV */
 
