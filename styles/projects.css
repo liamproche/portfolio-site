@@ -9,6 +9,9 @@ body{
     background-repeat: no-repeat;
     color: white;
 }
+.text-box{
+    background: blue;
+}
 div{
     border: 2px solid green;
 }
@@ -62,12 +65,6 @@ section{
     border: 2px solid white;
     text-align: center;
 }
-.project-container{
-    /* margin-top: 10%; */
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
 .x{
     height: 38px;
 }
@@ -76,31 +73,14 @@ section{
 }
 /* END SIDE NAVIGATION */
 
-.project-boxes{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    /* margin-right: 100px; */
 
-}
-.image-container{
+.project-box{
     background: url(images/terminal-2.png);
     background-size: cover;
-    background-position: center; 
-    height: 200px;
 }
-
-
-
-.text-box{
-    border: 2px solid gray;
-    width: 100%;
-    background: blue;
+.text-container{
+    background:rgba(0, 0, 0, .6)
 }
-.show-text-box p{
-    height: 100%;
-}
-
 
 /* FOOTER LINKS */
 .link-container{
@@ -118,9 +98,6 @@ section{
 /* END FOOTER LINKS */
 
 @media only screen and (min-width: 480px) {
-    .project-boxes{
-        grid-template-columns: 1fr 1fr;
-    }
     /* NAV FOR DESKTOP */
     nav{
         width: 30%;

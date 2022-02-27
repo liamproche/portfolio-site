@@ -1,7 +1,7 @@
 console.log('hello');
 const $landingPageText = $('.landing-page-text');
 const $navLinksContainer = $('#nav-links-container');
-const $hamburger = $('.menu-image');
+const $hamburger = $('.hamburger');
 const $sideNav = $('.side-nav');
 const $x = $('.x')
 const $textBox = $('.text-box');
