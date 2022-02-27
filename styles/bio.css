@@ -25,8 +25,9 @@ nav{
     cursor: pointer;
 }
 .side-nav{
-    background: black;
-    background: rgba(0, 0, 0, .6);
+    /* background: rgba(95, 60, 102, .8); */
+    /* background: black; */
+    background: rgba(0, 0, 0, .8);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -42,13 +43,22 @@ nav{
     -moz-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
     list-style-type: none;
 }
+.side-nav li{
+    margin-top: 20%;
+}
 .side-nav li a{
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
+}
+.nav-content{
+    margin-top: 30%;
+    height: 100%;
+    /* border: 2px solid white; */
+    text-align: center;
 }
 .x{
     height: 38px;
-    float: right;
 }
 
 .show-nav{
@@ -84,7 +94,7 @@ section{
 }
 
 div{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 footer{
@@ -131,15 +141,24 @@ footer{
         width: 10vw;
         height: 100%;
         position: static;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    
+
+  
         align-items: center;
-        justify-content: space-around;
+  
         border: 2px solid maroon;
+        margin: 0;
+    }
+    .nav-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .side-nav li{
         margin: 10px;
+    }
+    .side-nav li a{
+        font-size: 1.2rem;
     }
     .menu-image{
         display: none;
