@@ -12,17 +12,30 @@ body{
 }
 main{
     border: 2px solid blue;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    display: flex;
     background: rgba(0, 0 ,0, .3);
     background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    wi
+}
+div{
+    border: 2px solid green;
+}
+h1{
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+section{
+    border: 2px solid blue;
 }
 
-/*Side navigation*/
+/*SIDE NAV*/
 .menu-image{
     height: 38px;
     border: 2px solid teal;
@@ -55,7 +68,6 @@ main{
 }
 .nav-content{
     height: 100%;
-    /* border: 2px solid white; */
     text-align: center;
 }
 .x{
@@ -66,16 +78,7 @@ main{
     left: 0;
 }
 
-
-
-section{
-    border: 2px solid blue;
-}
-div{
-    border: 2px solid green;
-}
 @media only screen and (min-width: 480px) {
-
     /* NAV FOR DESKTOP */
     main{
         height: 100%;

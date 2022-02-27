@@ -4,6 +4,8 @@ const $navLinksContainer = $('#nav-links-container');
 const $hamburger = $('.menu-image');
 const $sideNav = $('.side-nav');
 const $x = $('.x')
+const $textBox = $('.text-box');
+const $projectDescription = $('.text-box p');
 
 
 
@@ -19,5 +21,10 @@ $($hamburger).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
 });
 $($x).on('click', ()=>{
-    $($sideNav).toggleClass('show-nav')
+    $($sideNav).toggleClass('show-nav');
+})
+
+
+$($textBox).on('click', ()=>{
+    $($projectDescription).toggleClass('.show-text-box')
 })
