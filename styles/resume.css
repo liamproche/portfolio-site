@@ -5,8 +5,7 @@
 }
 body{
     border: 2px solid orange;
-    color: white;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 main{
     border: 2px solid blue;
@@ -14,8 +13,7 @@ main{
     background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)); */
-    display: grid;
-    grid-template-columns: 1fr;
+    width: 100%;
 }
 div{
     border: 2px solid green;
@@ -25,10 +23,48 @@ h1{
     font-size: 1.5rem;
 }
 header{
+    height: 10vh;
 }
 section{
     border: 2px solid blue;
 }
+
+
+/* CONTACT SECTION */
+
+.contact-info{
+    background: black;
+    color: white;
+}
+
+/* END CONTACT SECTION */
+
+
+/* LINK IMAGES */
+
+.link-container{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 20px;
+}
+.link-container img{
+    height: 6vh;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+/* END LINK IMAGES */
+
+
+/* GRID SECTION */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* END GRID SECTION */
 
 /*SIDE NAV BEGIN*/
 .side-nav{
@@ -57,6 +93,7 @@ section{
 .menu-image{
     height: 38px;
     float: right;
+    margin-top: 10px;
 }
 
 .x{
@@ -82,7 +119,7 @@ a{
 /* SIDE NAV END */
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 490px) {
         /* NAV */
         
         .side-nav{
@@ -112,4 +149,23 @@ a{
         }
         
     /* END NAV FOR DESKTOP */
+
+
+    /* GRID MEDIA QUERIES */
+    .grid{
+        grid-template-columns: .5fr 1fr;
+    }
+    
+    /* END GRID MEDIA QUERIES */
 }
+
+
+/* LOSE FOR MOBILE */
+
+@media only screen and (max-width: 490px){
+    .title-and-description{
+        display: none;
+    }
+}
+
+/* END LOSE FOR MOBILE */
