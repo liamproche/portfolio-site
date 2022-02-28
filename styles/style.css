@@ -53,12 +53,7 @@ main{
     color: white;
     background: rgba(0, 0, 0, .94);
 }
-.hamburger{
-    height: 38px;
-    float: right;
-    margin-right: 5px;
-    margin-top: 10px;
-}
+
 
 /* SIDE NAV */
 .side-nav{
@@ -86,6 +81,8 @@ main{
 }
 .menu-image{
     height: 38px;
+    float: right;
+    margin-right: 5px;
 }
 .x{
     height: 38px;
@@ -123,9 +120,6 @@ a{
 
 /* TITLE APPEAR */
 
-/* .landing-page-text{
-    opacity: 0;
-} */
 .landing-page-text{
     opacity: 0;
     transition: all 2s;
@@ -168,4 +162,5 @@ a{
     .x{
         display: none;
     }
+    /* END SIDENAV MEDIA QUERIES */
 }

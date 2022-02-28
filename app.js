@@ -19,11 +19,12 @@ $($landingPageText).on('click', ()=>{
 
 $($hamburger).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
-
+    $($hamburger).css('opacity', '0')
 });
 
 $($x).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
+    $($hamburger).css('opacity', '1');
 })
 
 
@@ -32,7 +33,8 @@ $($x).on('click', ()=>{
 function changeQuestionMark(){
 $('.hero h1').on('click', function(){
         console.log('clicked')
-        $('.punctuation').text(',')
+        // GET BETTER FONT FOR THIS
+        $('.punctuation').text(' :-)')
         nameAppear();
         jobAppear();
     })
