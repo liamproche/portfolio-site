@@ -40,16 +40,15 @@ $($projectText).on('click', (e)=>{
 
 
 //LANDING PAGE OPENING SEQUENCE START
-function changeQuestionMark(){
-    $('.hero h1').on('click', function(){
+    $('.hero h1').on('click', ()=>{
             console.log('clicked');
-            // GET BETTER FONT FOR THIS
-            $('.punctuation').text('. :-)');
-            nameAppear();
-            jobAppear();
             $('.hero h1').css('pointer-events', 'none');
+            $('.punctuation').fadeOut(()=>{
+                $('.punctuation').text('. :-)').fadeIn();
+            });
+            setTimeout(nameAppear, 1000)
+            setTimeout(jobAppear, 1800);
     })
-}
 
 
 //for name appear effect
@@ -63,8 +62,7 @@ function jobAppear(){
     $('.hero h3').toggleClass('third-appear');
 };
 
-   
-//calls first event in landing page sequence
-changeQuestionMark();
+
+
 
 //LANDING PAGE OPENING SEQUENCE END

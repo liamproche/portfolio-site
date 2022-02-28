@@ -6,13 +6,13 @@
 
 /* FOR LAYOUT PUPOSES */
 
-main{
+/* main{
     border: 2px solid red;
 }
 
 body{
     border: 2px solid blue;
-    
+
 }
 
 ul{
@@ -26,19 +26,18 @@ li{
 }
 nav{
     border: 2px solid red;
-}
+} */
 
 /* END LAYOUT PURP */
 
 
 body{
-
     font-size: 18px;
     font-family: 'Fredoka', sans-serif;
 }
 header{
     background: white;
-    height: 10vh;
+    height: 14vh;
     display: flex;
     justify-content: flex-end;
 }
@@ -131,13 +130,16 @@ a{
 /* FOOTER LINKS */
 
 .link-container{
+    height: 15vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+
 .link-container img{
     height: 5vh;
     margin-left: 10px;
+    margin-top: 10%; 
 }
 
 /* END FOOTER LINKS */
@@ -173,7 +175,6 @@ a{
         position: static;
     }
     li{
-        margin: 0;
         margin-left: 5%
     }
     a{
@@ -191,15 +192,4 @@ a{
         display: none;
     }
     /* END SIDENAV MEDIA QUERIES */
-}
-
-
-
-@media only screen and (max-width: 490px){
-    h3{
-        margin-top: 0;
-    }
-    .link-container{
-        margin-top: 20%;
-    }
 }
