@@ -67,7 +67,6 @@ header{
     align-items: center;
     
     /* NEW STYLING STARTS HERE 2:07PC */
-    border: 2px solid black;
     z-index: 1;
 
 
@@ -94,7 +93,7 @@ li{
 }
 a{
     display: block;
-    color:black;
+    color: black;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -133,7 +132,7 @@ a{
 .paragraph{
     margin: 10% 3%;
     padding: 20px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .4);
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -173,6 +172,18 @@ a{
 
 /* END PHOTO */
 
+
+/* START CONTACT FORM */
+
+.contact-button{
+    border: none;
+    font-size: .9rem;
+}
+
+/* END CONTACT FORM */
+
+
+
 @media only screen and (min-width: 490px){
     
     /* NAV */
@@ -206,10 +217,6 @@ a{
     /* END SIDENAV MEDIA QUERIES */
 
     /* MAIN GRID */
-    .bio-content{
-        display: grid;
-        grid-template-columns: 460px 1fr;
-    }
 
     /* END MAIN GRID */
 
@@ -221,7 +228,24 @@ a{
    /* END HEADER ADJUSTMENT */
 
    /* PHOTO ADJUSTMENTS */
-
+   .photo-container{
+       border-radius: 10px 200px 200px 10px; ;
+   } 
+   
+   #headshot{
+        border-radius: 500px;
+        left: 10%;
+    }
+    .paragraph{
+        margin-top: 5%;
+        width: 82%;
+    }
+    .photo-container h2{
+        font-size: 4rem;
+    }
+    .photo-container h3{
+        font-size: 3rem;
+    }
 
   /* END PHOTO ADJUST */
 }
