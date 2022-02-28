@@ -6,10 +6,11 @@ console.log('hello');
 const $navLinksContainer = $('#nav-links-container');
 const $hamburger = $('.menu-image');
 const $sideNav = $('.side-nav');
-const $x = $('.x')
+const $x = $('.x');
 const $textBox = $('.text-box');
 const $projectBox = $('.project-container');
 const $projectText = $('.project-text');
+
 
 
 
@@ -31,7 +32,7 @@ $($x).on('click', ()=>{
 //PROJECTS SLIDER PANELS START
 $($projectBox).on('click', (e)=>{
     $(e.target).toggleClass('show-description');
-    console.log('clicked');
+    console.log('clicked')
 });
 $($projectText).on('click', (e)=>{
     $(e.target).parent().parent().toggleClass('show-decription')
@@ -41,11 +42,12 @@ $($projectText).on('click', (e)=>{
 //LANDING PAGE OPENING SEQUENCE START
 function changeQuestionMark(){
     $('.hero h1').on('click', function(){
-            console.log('clicked')
+            console.log('clicked');
             // GET BETTER FONT FOR THIS
-            $('.punctuation').text('. :-)')
+            $('.punctuation').text('. :-)');
             nameAppear();
             jobAppear();
+            $('.hero h1').css('pointer-events', 'none');
     })
 }
 
