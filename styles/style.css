@@ -103,9 +103,12 @@ a{
     width: 100%;
     text-align: center;
 }
+
 /* END SIDE NAV */
 
+
 /* FOOTER LINKS */
+
 .link-container{
     display: flex;
     justify-content: center;
@@ -116,6 +119,7 @@ a{
     height: 5vh;
     margin-left: 10px;
 }
+
 /* END FOOTER LINKS */
 
 
