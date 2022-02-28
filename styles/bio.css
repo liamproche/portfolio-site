@@ -41,7 +41,7 @@ h2{
     height: 38px;
     float: right;
     margin-right: 5px;
-
+    margin-top: 15px;
 }
 
 .x{
@@ -80,7 +80,6 @@ main{
     /* display: grid;
     grid-template-columns: 1fr; */
     display: flex;
-    background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     justify-content: center;
