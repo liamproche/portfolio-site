@@ -5,7 +5,6 @@
 }
 body{
     border: 2px solid orange;
-    color: white;
     font-family: sans-serif;
 }
 h2{
@@ -13,7 +12,26 @@ h2{
     font-size: 2rem;
 }
 
+/* FOR LAYOUT */
+
+main{
+    border: 2px solid red;
+}
+section{
+    margin: 2px solid blue;
+}
+div{
+    border: 2px solid green;
+}
+header{
+    background: white;
+}
+
+/* END LAYOUT */
+
+
 /*SIDEBAR NAV*/
+
 .side-nav{
     background: rgba(255, 255, 255, .8);
     width: 50%;
@@ -43,10 +61,11 @@ h2{
     margin-right: 5px;
     margin-top: 15px;
 }
-
 .x{
     height: 38px;
     align-self: flex-end;
+    margin-top: 15px;
+    margin-right: 5px;
 }
 li{
     list-style: none;
@@ -62,9 +81,12 @@ a{
     width: 100%;
     text-align: center;
 }
+
 /* END SIDE NAVIGATION */
 
+
 /* FOOTER LINKS */
+
 .link-container{
     display: flex;
     justify-content: center;
@@ -73,29 +95,15 @@ a{
     height: 5vh;
     margin-left: 10px;
 }
-/* END FOOTER LINKS */
 
-main{
-    border: 2px solid blue;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    display: flex;
-    background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-    background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-    justify-content: center;
-}
+/* END FOOTER LINKS */
 section{
     border: 2px solid blue;
 }
 
-div{
-    /* border: 2px solid green; */
-}
 
-footer{
-    background: rgba(0, 0, 0, .6);
-    height: 10%;
-}
+
+
 /* adjust after finding photo */
 .photo h2{
     height: 200px;
@@ -106,10 +114,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.header{
-    display: flex;
-    background: linear-gradient(45deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2))
-}
+
 .link-container{
     margin-top: 15%;
 }
@@ -124,7 +129,10 @@ footer{
 
 
 @media only screen and (min-width: 490px){
+    
+    
     /* NAV */
+    
     .side-nav{
         right: 0;
         height: 15vh;
@@ -150,5 +158,6 @@ footer{
     .x{
         display: none;
     }
+    
     /* END SIDENAV MEDIA QUERIES */
 }
