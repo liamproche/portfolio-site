@@ -19,8 +19,31 @@ $($landingPageText).on('click', ()=>{
 
 $($hamburger).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
+
 });
 
 $($x).on('click', ()=>{
     $($sideNav).toggleClass('show-nav');
 })
+
+
+
+
+function changeQuestionMark(){
+$('.hero h1').on('click', function(){
+        console.log('clicked')
+        $('.punctuation').text(',')
+        nameAppear();
+        jobAppear();
+    })
+}
+
+function nameAppear(){
+    $('.hero h2').toggleClass('second-appear');
+}
+
+function jobAppear(){
+    $('.hero h3').toggleClass('third-appear')
+}
+
+changeQuestionMark();
