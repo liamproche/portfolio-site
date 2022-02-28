@@ -22,9 +22,6 @@ header{
 
 
 /* FOR POSITIONING */
-
-.text-box{
-}
 div{
     border: 2px solid green;
 }
@@ -116,7 +113,9 @@ a{
 }
 /* END SIDE NAVIGATION */
 
+
 /* FOOTER LINKS */
+
 .link-container{
     display: flex;
     justify-content: center;
@@ -129,33 +128,48 @@ a{
     height: 5vh;
     margin-left: 10px;
 }
+
 /* END FOOTER LINKS */
+
 
 /* START SLIDE PANELS */
 .project-text{
     color: white;
     background: rgba(0, 0, 0, .7);
+    pointer-events: none;
     }
 p{
-    height: 30px;
-    opacity: 0;
+    height: 40px;
     font-size: 2rem;
 }
 small{
     font-size: 1rem;
+    opacity: 0;
 }
 .show-description p{
-    opacity: 1;
     height: 100%;
 }
+.show-description small{
+    opacity: 1;
+}
+
 /* END SLIDE PANELS */
 
+    
+/* FOOTER LINKS */
+
+.link-container{
+        width: 100%;
+    }
+
+/* END FOOTER LINKS */
 
 
 
 
-@media only screen and (min-width: 480px) {
-        
+@media only screen and (min-width: 480px) {  
+    
+    
     /* NAV */
         
     .side-nav{
@@ -196,19 +210,15 @@ small{
     /* END GRID ADJUSTMENT */
 
     /* PROJECT CONTAINER ADJUSTMENT */
-        .project-container{
-            height: 375px;
-            width: 375px;
-        }
+        
+    .project-container{
+        height: 375px;
+        width: 375px;
+    }
 
 
     /* END PROJECT CONTAINER ADJUSTMENT */
     
-    
-    /* FOOTER LINKS */
-    .link-container{
-        width: 100%;
-        }
-    /* END FOOTER LINKS */
+
 }
 
