@@ -36,7 +36,7 @@ function changeQuestionMark(){
 $('.hero h1').on('click', function(){
         console.log('clicked')
         // GET BETTER FONT FOR THIS
-        $('.punctuation').text(' :-)')
+        $('.punctuation').text('. :-)')
         nameAppear();
         jobAppear();
     })
@@ -52,7 +52,7 @@ function jobAppear(){
 
 changeQuestionMark();
 
-$($projectBox).on('click', ()=>{
-    $($projectBox).toggleClass('show-description');
+$($projectBox).on('click', (e)=>{
+    $(e.target).toggleClass('show-description');
     console.log('clicked');
 })
