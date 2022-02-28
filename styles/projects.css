@@ -11,6 +11,7 @@ body{
     font-size: 18px;
     background-repeat: no-repeat;
     background: black;
+
 }
 header{
     background: white;
@@ -28,7 +29,7 @@ div{
 main{
     border: 2px solid red;
     background: black;
-    height: 70vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10%;
@@ -57,11 +58,11 @@ nav{
     width: 100%;
 }
 
-
 /* END PROJECT CONTAINERS */
 
 
 /*SIDEBAR NAV*/
+
 .side-nav{
     background: rgba(255, 255, 255, .8);
     width: 50%;
@@ -111,6 +112,7 @@ a{
     width: 100%;
     text-align: center;
 }
+
 /* END SIDE NAVIGATION */
 
 
@@ -119,10 +121,9 @@ a{
 .link-container{
     display: flex;
     justify-content: center;
-    justify-self: flex-end;
-    align-self: flex-end;
     width: 100%;
-    margin-top: 40%;
+    position: relative;
+    bottom: 0;
 }
 .link-container img{
     height: 5vh;
@@ -137,7 +138,8 @@ a{
     color: white;
     background: rgba(0, 0, 0, .7);
     pointer-events: none;
-    }
+    padding: 15px;
+}
 p{
     height: 40px;
     font-size: 2rem;
@@ -154,17 +156,6 @@ small{
 }
 
 /* END SLIDE PANELS */
-
-    
-/* FOOTER LINKS */
-
-.link-container{
-        width: 100%;
-    }
-
-/* END FOOTER LINKS */
-
-
 
 
 @media only screen and (min-width: 480px) {  
