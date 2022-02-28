@@ -149,7 +149,7 @@ a{
             border: 2px solid red;
             height: 10vh; 
             width: 100%;
-            }
+        }
         li{
             margin: 0;
             margin-left: 5%
@@ -174,9 +174,9 @@ a{
 
     /* GRID MEDIA QUERIES */
     .grid{
-        grid-template-columns: .5fr 1fr;
+        grid-template-columns: 30% 1fr;
         width: 90%;
-        gap: 5%;
+        gap: 7%;
         margin: 0 auto;
     }
     
