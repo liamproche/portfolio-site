@@ -4,6 +4,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Fredoka', sans-serif;
 }
 body{
     font-family: sans-serif;
@@ -47,8 +48,8 @@ nav{
 
 /* PROJECT CONTAINERS */
 .project-container{
-    height: 250px;
-    width: 250px;
+    height: 375px;
+    width: 375px;
     background: url(images/terminal-2.png);
     background-size: cover;
     background-position: center;
@@ -130,6 +131,29 @@ a{
 }
 /* END FOOTER LINKS */
 
+/* START SLIDE PANELS */
+.project-text{
+    color: white;
+    background: rgba(0, 0, 0, .7);
+    }
+p{
+    height: 30px;
+    opacity: 0;
+    font-size: 2rem;
+}
+small{
+    font-size: 1rem;
+}
+.show-description p{
+    opacity: 1;
+    height: 100%;
+}
+/* END SLIDE PANELS */
+
+
+
+
+
 @media only screen and (min-width: 480px) {
         
     /* NAV */
@@ -173,8 +197,8 @@ a{
 
     /* PROJECT CONTAINER ADJUSTMENT */
         .project-container{
-            height: 300px;
-            width: 300px;
+            height: 375px;
+            width: 375px;
         }
 
 
@@ -187,3 +211,4 @@ a{
         }
     /* END FOOTER LINKS */
 }
+

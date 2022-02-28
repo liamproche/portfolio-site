@@ -5,7 +5,9 @@ const $hamburger = $('.menu-image');
 const $sideNav = $('.side-nav');
 const $x = $('.x')
 const $textBox = $('.text-box');
-const $projectDescription = $('.text-box p');
+const $projectBox = $('.project-container');
+const $projectText = $('.project-text')
+
 
 
 
@@ -45,7 +47,12 @@ function nameAppear(){
 }
 
 function jobAppear(){
-    $('.hero h3').toggleClass('third-appear')
+    $('.hero h3').toggleClass('third-appear');
 }
 
 changeQuestionMark();
+
+$($projectBox).on('click', ()=>{
+    $($projectBox).toggleClass('show-description');
+    console.log('clicked');
+})
