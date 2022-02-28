@@ -4,20 +4,32 @@
     font-size: 18px;
 }
 body{
-    border: 2px solid orange;
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    background: -webkit-linear-gradient(135deg, #0000, #404040);
+    background-repeat: no-repeat;
 }
 h2{
     margin: 0 auto;
     font-size: 2rem;
 }
+
 header{
     height: 10vh;
 }
 /* FOR LAYOUT */
 
+body{
+    color: white;
+}
+
+/* body{
+    border: 2px solid orange;
+}
 main{
     border: 2px solid red;
+}
+section{
+    border: 2px solid blue;
 }
 section{
     margin: 2px solid blue;
@@ -27,7 +39,7 @@ div{
 }
 header{
     background: white;
-}
+} */
 
 /* END LAYOUT */
 
@@ -53,6 +65,13 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    /* NEW STYLING STARTS HERE 2:07PC */
+    border: 2px solid black;
+    z-index: 1;
+
+
+    /* END NEW STYLING */
 }
 .show-nav{
     right: 0;
@@ -91,54 +110,77 @@ a{
 
 .link-container{
     display: flex;
-    justify-content: center;
+    border: 2px solid blue;
 }
 .link-container img{
     height: 5vh;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* END FOOTER LINKS */
-section{
-    border: 2px solid blue;
-}
 
 
-
-
-/* adjust after finding photo */
-.photo h2{
-    height: 200px;
-    width: 200px;
-    border: 2px solid pink;
-}
 .bio-content{
     display: flex;
     flex-direction: column;
 }
 
 .link-container{
+    display: flex;
     margin-top: 15%;
+    justify-content: center;
 }
 .paragraph{
-    margin-top: 10%;
+    margin: 10% 3%;
     padding: 20px;
-}
-.photo{
-    margin-top: 10%;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 
+/* START PHOTO */
+
+.photo-container{
+    /* NOTE-NEED PROFESSIONAL HEADSHOT*/
+    background-size: cover;
+    width: 90vw;
+    height: 35vw;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 5px 120px 120px 5px;
+    border: 1px solid black;
+}
+.text-container{
+    align-self: flex-start;
+    margin-left: 40px;
+}
+.photo-container h2{
+    margin: 0;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+#headshot{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 70px;
+    position: relative;
+    left: 10%;
+    border: 1px solid white;
+    }
+
+
+/* END PHOTO */
 
 @media only screen and (min-width: 490px){
-    
     
     /* NAV */
     
     .side-nav{
         right: 0;
         height: 15vh;
-        border: 2px solid red;
+        background: rgba(0, 0, 0, 0);
         height: 10vh; 
         width: 100%;
         }
@@ -177,4 +219,9 @@ section{
     }
 
    /* END HEADER ADJUSTMENT */
+
+   /* PHOTO ADJUSTMENTS */
+
+
+  /* END PHOTO ADJUST */
 }
