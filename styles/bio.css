@@ -11,7 +11,9 @@ h2{
     margin: 0 auto;
     font-size: 2rem;
 }
-
+header{
+    height: 10vh;
+}
 /* FOR LAYOUT */
 
 main{
@@ -160,4 +162,19 @@ section{
     }
     
     /* END SIDENAV MEDIA QUERIES */
+
+    /* MAIN GRID */
+    .bio-content{
+        display: grid;
+        grid-template-columns: 460px 1fr;
+    }
+
+    /* END MAIN GRID */
+
+   /* HEADER ADJUSTMENTS */
+    header{
+        position: static;
+    }
+
+   /* END HEADER ADJUSTMENT */
 }
