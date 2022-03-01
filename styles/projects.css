@@ -102,7 +102,6 @@ main{
     margin-right: 5px;
     margin-top: 15px;
 }
-
 .x{
     height: 38px;
     align-self: flex-end;
@@ -149,6 +148,10 @@ a{
     background: rgba(0, 0, 0, .7);
     pointer-events: none;
     padding: 15px;
+    transition: all 2s ease-in-out;
+}
+.project-text p{
+    transition: height .5s ease-in-out;
 }
 p{
     height: 40px;
@@ -157,9 +160,10 @@ p{
 small{
     font-size: 1rem;
     opacity: 0;
+    transition: opacity .3s ease-in;
 }
 .show-description p{
-    height: 100%;
+    height: 200px;
 }
 .show-description small{
     opacity: 1;
