@@ -1,28 +1,31 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 18px;
 }
 body{
     font-family: 'Fredoka', sans-serif;
-    background: -webkit-linear-gradient(135deg, #0000, #404040);
+    /* background: -webkit-linear-gradient(135deg, #0000, #404040); */
     background-repeat: no-repeat;
+    font-size: 18px;
 }
 h2{
     margin: 0 auto;
     font-size: 2rem;
 }
-
+main{
+    height: 80vh;
+    color: white;
+}
 header{
     height: 10vh;
 }
+
 /* FOR LAYOUT */
 
+ /*header{
+    border: 2px solid red;
+} */
 body{
-    color: white;
-}
-
-/* body{
     border: 2px solid orange;
 }
 main{
@@ -39,7 +42,7 @@ div{
 }
 header{
     background: white;
-} */
+}
 
 /* END LAYOUT */
 
@@ -58,9 +61,9 @@ header{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     border-right: 1px solid #ccc;
-    transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
-    -webkit-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
-    -moz-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
+    transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -webkit-transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -moz-transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -108,8 +111,9 @@ a{
 /* FOOTER LINKS */
 
 .link-container{
+    height: 10vh;
     display: flex;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .link-container img{
     height: 5vh;
@@ -126,15 +130,19 @@ a{
 
 .link-container{
     display: flex;
-    margin-top: 15%;
     justify-content: center;
 }
 .paragraph{
-    margin: 10% 3%;
+    margin-top: 10%;
     padding: 20px;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 10px;
-    border: 1px solid black;
+    background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    position: relative;
+    /* places paragraph out of eyeshot */
+    left: 0vw;
+    margin-left: 15vw;
+    animation-name: text-move;
+    animation-duration: .8s;
+    animation-delay: .2s;
 }
 
 
@@ -143,17 +151,21 @@ a{
 .photo-container{
     /* NOTE-NEED PROFESSIONAL HEADSHOT*/
     background-size: cover;
-    width: 90vw;
+    width: 85vw;
     height: 35vw;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 5px 120px 120px 5px;
-    border: 1px solid black;
+    justify-content: space-around;
+    background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    /* border-radius: 5px 120px 120px 5px; */
+    animation-name: photo-move;
+    animation-duration: .8s;
+    animation-delay: .2s;
+    position: relative;
 }
 .text-container{
     align-self: flex-start;
-    margin-left: 40px;
+    position: relative;
 }
 .photo-container h2{
     margin: 0;
@@ -161,13 +173,10 @@ a{
     margin-top: 10px;
 }
 #headshot{
-    width: 30vw;
-    height: 30vw;
-    border-radius: 70px;
-    position: relative;
-    left: 10%;
-    border: 1px solid white;
-    }
+    width: 28vw;
+    height: 28vw;;
+    border: 2px solid rgba(237, 230, 230);
+}
 
 
 /* END PHOTO */
@@ -182,6 +191,19 @@ a{
 
 /* END CONTACT FORM */
 
+
+/* START ANIMATIONS */
+
+@keyframes text-move{
+    from{left: 85vw}
+    to{left: 0vw}
+}
+@keyframes photo-move{
+    from{right: 85vw}
+    to{right: 0vw}
+}
+
+/* END ANIMATIONS */
 
 
 @media only screen and (min-width: 490px){
@@ -222,30 +244,12 @@ a{
 
    /* HEADER ADJUSTMENTS */
     header{
-        position: static;
+        position: relative;
     }
 
    /* END HEADER ADJUSTMENT */
 
    /* PHOTO ADJUSTMENTS */
-   .photo-container{
-       border-radius: 10px 200px 200px 10px; ;
-   } 
-   
-   #headshot{
-        border-radius: 500px;
-        left: 10%;
-    }
-    .paragraph{
-        margin-top: 5%;
-        width: 82%;
-    }
-    .photo-container h2{
-        font-size: 4rem;
-    }
-    .photo-container h3{
-        font-size: 3rem;
-    }
 
   /* END PHOTO ADJUST */
 }
