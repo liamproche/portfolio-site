@@ -35,10 +35,7 @@ main{
     background: url(images/test.jpg);
     background-size: cover;
 }
-.grid{
-    background: rgba(0, 0, 0, .94);
-    padding-top: 40px;
-}
+
 .scrim{
     height: 100%;
 }
@@ -54,11 +51,15 @@ section{
 
 /* GRID */
 
-.grid{
+.main-flex-box{
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, .94);
 }
+
+
 
 /* END GRID */
 
@@ -248,6 +249,11 @@ small .link-image{
 
     /* END PROJECT CONTAINER ADJUSTMENT */
     
+
+       /* HEADER ADJUSTMENTS */
+       header{
+        position: relative;
+    }
 
 }
 
