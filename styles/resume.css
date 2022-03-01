@@ -4,7 +4,6 @@
     font-size: 18px;
 }
 body{
-    border: 2px solid orange;
     font-family: 'Fredoka', sans-serif;
     background-repeat: no-repeat;
     height: 100%;
@@ -14,7 +13,6 @@ body{
 /* BACKGROUND */
 
 main{
-    border: 2px solid red;
     /* background: rgba(0, 0 ,0, .3);
     background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
@@ -44,6 +42,17 @@ section{
 div{
     border: 2px solid green;
 } */
+
+/* body{
+    border: 2px solid orange;
+} */
+/* .side-nav{
+    border: 2px solid red;
+} */
+
+main{
+    /* border: 2px solid red; */
+}
 
 /* END LAYOUT */
 
@@ -187,7 +196,6 @@ a{
         .side-nav{
             right: 0;
             height: 10vh;
-            border: 2px solid red;
             height: 10vh; 
             width: 100%;
         }
@@ -238,10 +246,27 @@ a{
         margin: 0;
         margin-top: 5%;
         margin-left: 5%;
-        
+
     }
     /* END GRID MEDIA QUERIES */
+    
+    
+    /* CONTACT INFO TEXT */
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+/* CONTACT INFO TEXT */
+    
+
 }
+
+
+
 
 
 /* LOSE FOR MOBILE */
