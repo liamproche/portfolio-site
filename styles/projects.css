@@ -23,10 +23,15 @@ header{
 
 /* FOR POSITIONING */
 
-/* div{
+div{
     border: 2px solid green;
-} */
-
+}
+section{
+    border: 2px solid blue;
+}
+main{
+    border: 2px solid red
+}
 
 /* BACKGROUND */
 
@@ -75,6 +80,7 @@ section{
     display: flex;
     align-items: flex-end;
     cursor: pointer;
+    margin-bottom: 10%;
 }
 .project-title{
     width: 100%;
@@ -230,38 +236,10 @@ small .link-image{
         
     /* END SIDENAV MEDIA QUERIES */
 
-    /* GRID ADJUSTMENT */
-    
-    .grid{
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        height: 120vh;
-    }
-    
-    /* END GRID ADJUSTMENT */
-
-    /* PROJECT CONTAINER ADJUSTMENT */
-        
-    .project-container{
-        height: 375px;
-        width: 375px;
-    }
-
-    /* END PROJECT CONTAINER ADJUSTMENT */
     
 
-       /* HEADER ADJUSTMENTS */
-       header{
+    /* HEADER ADJUSTMENTS */
+    header{
         position: relative;
     }
-
-}
-
-@media only screen and (max-width: 490px){
-    
-    /* ADUJUST WHEN ADDING NEW CONTENT */
-    main{
-        height: 250vh;
-    }
-    /* END ADJUST */
 }
