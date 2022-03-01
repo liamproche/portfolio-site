@@ -37,7 +37,7 @@ body{
 }
 header{
     background: white;
-    height: 14vh;
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
 }
@@ -63,12 +63,11 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
     padding: 40px;
     color: white;
     background: rgba(0, 0, 0, .94);
 }
-
 
 /* SIDE NAV */
 
@@ -130,14 +129,14 @@ a{
 /* FOOTER LINKS */
 
 .link-container{
-    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
 }
 
 .link-container img{
-    height: 5vh;
+    height: 6vh;
     margin-left: 10px;
     margin-top: 10%; 
 }
