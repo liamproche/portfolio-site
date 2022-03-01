@@ -9,13 +9,26 @@ body{
     font-size: 18px;
 }
 h2{
-    margin: 0 auto;
     font-size: 2rem;
 }
+
+
+/* BACKGROUND IMAGE */
+
 main{
     height: 80vh;
     color: white;
+    background:url(images/zion-national.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.scrim{
+background: rgba(0, 0, 0, .9);
+height: 100%;
+}
+
+/* END BACKGROUND IMAGE */
+
 header{
     height: 10vh;
 }
@@ -25,7 +38,7 @@ header{
  /*header{
     border: 2px solid red;
 } */
-body{
+/* body{
     border: 2px solid orange;
 }
 main{
@@ -34,15 +47,12 @@ main{
 section{
     border: 2px solid blue;
 }
-section{
-    margin: 2px solid blue;
-}
 div{
     border: 2px solid green;
 }
 header{
     background: white;
-}
+} */
 
 /* END LAYOUT */
 
@@ -113,6 +123,7 @@ a{
 .link-container{
     height: 10vh;
     display: flex;
+    align-items: center;
     /* border: 2px solid blue; */
 }
 .link-container img{
@@ -143,6 +154,8 @@ a{
     animation-name: text-move;
     animation-duration: .8s;
     animation-delay: .2s;
+    border: 2px solid rgba(237, 230, 230);
+    border-right: none;
 }
 
 
@@ -156,22 +169,30 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     /* border-radius: 5px 120px 120px 5px; */
     animation-name: photo-move;
     animation-duration: .8s;
     animation-delay: .2s;
     position: relative;
+    margin-top: 5%;
+    border: 2px solid rgba(237, 230, 230);
+    border-left: none;
 }
 .text-container{
     align-self: flex-start;
     position: relative;
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
 }
-.photo-container h2{
-    margin: 0;
-    align-self: flex-start;
-    margin-top: 10px;
+.text-container h2, .text-container h3{
+    margin: 0 auto;
 }
+
 #headshot{
     width: 28vw;
     height: 28vw;;
@@ -218,8 +239,7 @@ a{
         width: 100%;
         }
     li{
-        margin: 0;
-        margin-left: 5%
+        margin-left: 5%;
     }
     a{
         font-size: 1.5rem;
@@ -238,9 +258,6 @@ a{
     
     /* END SIDENAV MEDIA QUERIES */
 
-    /* MAIN GRID */
-
-    /* END MAIN GRID */
 
    /* HEADER ADJUSTMENTS */
     header{
