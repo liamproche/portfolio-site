@@ -182,8 +182,7 @@ a{
 .text-container{
     align-self: flex-start;
     position: relative;
-    height: 100%;
-    /* width: 100%; */
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,7 +194,6 @@ a{
 
 #headshot{
     width: 28vw;
-    height: 28vw;;
     border: 2px solid rgba(237, 230, 230);
 }
 
@@ -267,6 +265,19 @@ a{
    /* END HEADER ADJUSTMENT */
 
    /* PHOTO ADJUSTMENTS */
-
+    .photo-container{
+        height: 20vh;
+        width: 50vw;
+    }
+    #headshot{
+        width: 18vh;
+    }
+    .text-container{
+        align-self: center;
+    }
+    .paragraph{
+        margin-left: 55%;
+        height:
+    }
   /* END PHOTO ADJUST */
 }
