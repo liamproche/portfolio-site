@@ -32,6 +32,9 @@ section{
 main{
     border: 2px solid red
 }
+.main-flex-box{
+    border: 2px solid purple;
+}
 
 /* BACKGROUND */
 
@@ -52,41 +55,6 @@ section{
 }
 
 /* END POSITIONING */
-
-
-/* GRID */
-
-.main-flex-box{
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    background: rgba(0, 0, 0, .94);
-}
-
-
-
-/* END GRID */
-
-
-/* PROJECT CONTAINERS */
-
-.project-container{
-    height: 375px;
-    width: 375px;
-    background: url(images/terminal-2.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    cursor: pointer;
-    margin-bottom: 10%;
-}
-.project-title{
-    width: 100%;
-}
-
-/* END PROJECT CONTAINERS */
 
 
 /*SIDEBAR NAV*/
@@ -141,6 +109,65 @@ a{
 }
 
 /* END SIDE NAVIGATION */
+
+
+/* MAIN FLEXBOX */
+
+.main-flex-box{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, .94);
+}
+
+.wrapper{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* END MAIN FLEXBOX */
+
+
+/* PROJECT CONTAINERS */
+
+.project-container{
+    height: 375px;
+    width: 375px;
+    background: url(images/terminal-2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.project-title{
+    width: 100%;
+}
+
+
+/* PROJECT GITHUB LINKS */
+.check-out{
+    color: white;
+    font-size: .8rem;
+}
+#castle-battle-link{
+   margin: 0;
+}
+
+/* END PROJECT GITHUB LINKS */
+
+
+/* END PROJECT CONTAINERS */
+
+
+
 
 
 /* FOOTER LINKS */
