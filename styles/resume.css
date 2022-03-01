@@ -26,37 +26,49 @@ main{
 .scrim{
     background: rgba(0, 0, 0, .94);
 }
-
-div{
-    border: 2px solid green;
-}
-h1{
-    margin: 0 auto;
-    font-size: 1.5rem;
-}
 header{
     height: 10vh;
+}
+
+/* END BACKGROUND */
+
+
+/* FOR LAYOUT */
+/* 
+header{
     border: 2px solid blue;
 }
 section{
     border: 2px solid blue;
 }
+div{
+    border: 2px solid green;
+} */
 
-/* TEXT FORMATTING */
-
-
-
-
-
-/* END TEXT FORMATTING */
+/* END LAYOUT */
 
 
+/* TEXT-SIZING */
+
+h1{
+    font-size: 1.8rem;
+}
+.company{
+    font-size: 1.6rem;
+}
+.title{
+    font-size: 1.2rem;
+}
+
+
+/* END TEXT-SIZING */
 
 
 /* CONTACT SECTION */
 
 .contact-info{
     color: white;
+    padding: 5%;
 }
 
 /* END CONTACT SECTION */
@@ -84,8 +96,7 @@ section{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    overflow:auto;
-    row-gap: 10%;
+    overflow: auto;
     height: 100vh;
 }
 
@@ -164,11 +175,6 @@ a{
     margin: 10% auto;
 }
 
-/* END MISSION STATEMENT */
-
-
-/* EXPERIENCE SECTION */
-
 .experience{
     color: white;
 }
@@ -210,10 +216,11 @@ a{
     /* GRID MEDIA QUERIES */
     
     .grid{
-        grid-template-columns: .7fr 1fr;
+        grid-template-columns: .6fr .9fr;
         width: 90%;
         gap: 7%;
         margin: 0 auto;
+        margin-left: 40px;
     }
     .resume-primary{
         align-items: flex-start;
@@ -230,7 +237,8 @@ a{
     .grid{
         margin: 0;
         margin-top: 5%;
-        width: 100%;
+        margin-left: 5%;
+        
     }
     /* END GRID MEDIA QUERIES */
 }
