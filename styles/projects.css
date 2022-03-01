@@ -23,19 +23,30 @@ header{
 
 /* FOR POSITIONING */
 
-div{
+/* div{
     border: 2px solid green;
-}
+} */
+
+
+/* BACKGROUND */
+
 main{
-    border: 2px solid red;
     background: black;
+    background: url(images/test.jpg);
+    background-size: cover;
 }
+.grid{
+    background: rgba(0, 0, 0, .94);
+    padding-top: 40px;
+}
+.scrim{
+    height: 100%;
+}
+
+/* END BACKGROUND */
+
 section{
-    border: 2px solid blue;
     margin: 0 auto;
-}
-nav{
-    border: 2px solid purple;
 }
 
 /* END POSITIONING */
@@ -43,11 +54,10 @@ nav{
 
 /* GRID */
 
-main{
+.grid{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 26px;
 }
 
 /* END GRID */
@@ -63,6 +73,7 @@ main{
     background-position: center;
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
 }
 .project-title{
     width: 100%;
@@ -130,11 +141,14 @@ a{
 .link-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     position: relative;
     bottom: 0;
+    background: white;
+    height: 10vh;
 }
-.link-container img{
+.link-image{
     height: 5vh;
     margin-left: 10px;
 }
@@ -148,7 +162,7 @@ a{
     background: rgba(0, 0, 0, .7);
     pointer-events: none;
     padding: 15px;
-    transition: all 2s ease-in-out;
+    transition: height 2s ease-in-out;
 }
 .project-text p{
     transition: height .5s ease-in-out;
@@ -161,6 +175,16 @@ small{
     font-size: 1rem;
     opacity: 0;
     transition: opacity .3s ease-in;
+}
+small .link-image{
+    opacity: 0;
+}
+#castle-battle-link{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.show-description #castle-battle-link{
+    opacity: 1;
 }
 .show-description p{
     height: 200px;
@@ -180,7 +204,6 @@ small{
     .side-nav{
         right: 0;
         height: 15vh;
-        border: 2px solid red;
         height: 10vh; 
         width: 100%;
         position: static;    
@@ -208,7 +231,7 @@ small{
 
     /* GRID ADJUSTMENT */
     
-    main{
+    .grid{
         grid-template-columns: 1fr 1fr;
         gap: 50px;
         height: 120vh;
@@ -222,7 +245,6 @@ small{
         height: 375px;
         width: 375px;
     }
-
 
     /* END PROJECT CONTAINER ADJUSTMENT */
     

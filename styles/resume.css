@@ -6,15 +6,27 @@
 body{
     border: 2px solid orange;
     font-family: 'Fredoka', sans-serif;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
 }
+
+/* BACKGROUND */
+
 main{
-    border: 2px solid blue;
+    border: 2px solid red;
     /* background: rgba(0, 0 ,0, .3);
     background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
     background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)); */
-    width: 100%;
+    background: url(images/zion-2.jpg);
+
 }
+
+.scrim{
+    background: rgba(0, 0, 0, .94);
+}
+
 div{
     border: 2px solid green;
 }
@@ -24,16 +36,17 @@ h1{
 }
 header{
     height: 10vh;
+    border: 2px solid blue;
 }
 section{
     border: 2px solid blue;
 }
 
 
+
 /* CONTACT SECTION */
 
 .contact-info{
-    background: black;
     color: white;
 }
 
@@ -44,9 +57,10 @@ section{
 
 .link-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    margin-top: 20px;
+    height: 10vh;
 }
 .link-container img{
     height: 6vh;
@@ -61,7 +75,13 @@ section{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20%;
+    row-gap: 10%;
+    overflow: auto;
+    height: 100vh;
+}
+
+.resume-secondary{
+    display: none;
 }
 
 /* END GRID SECTION */
@@ -134,7 +154,6 @@ a{
 /* EXPERIENCE SECTION */
 
 .experience{
-    background: black;
     color: white;
 }
 
@@ -173,13 +192,19 @@ a{
 
 
     /* GRID MEDIA QUERIES */
+    
     .grid{
         grid-template-columns: 30% 1fr;
         width: 90%;
         gap: 7%;
         margin: 0 auto;
     }
-    
+    .resume-secondary{
+        display: block;
+    }
+    header{
+        position: static;
+    }
     /* END GRID MEDIA QUERIES */
 }
 

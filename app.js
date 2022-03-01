@@ -63,6 +63,5 @@ function jobAppear(){
 };
 
 
-
-
 //LANDING PAGE OPENING SEQUENCE END
+
