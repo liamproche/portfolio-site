@@ -99,8 +99,6 @@ $(document).ready(photoSlide);
 
 
 
-
-
 //CONTACT FORM
 
 // $('.email-button').on('click', ()=>{
