@@ -144,22 +144,34 @@ a{
     display: flex;
     justify-content: center;
 }
+
+
+/* START BIO */
+
 .paragraph{
     margin-top: 10%;
     padding: 20px;
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
     position: relative;
     /* places paragraph out of eyeshot */
-    margin-left: 15vw;
-    /* animation-name: text-move;
-    animation-duration: .8s;
-    animation-delay: .2s; */
-    /* transition: all 2s; */
+    left: 100vw;
     display: none;
+    animation-name: slide-para;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     border: 2px solid rgba(237, 230, 230);
     border-right: none;
 }
 
+.para-appear .paragraph{
+    display: block;
+}
+@keyframes slide-para{
+    0%{left:100%}
+    100%{left:0}
+}
+
+/* END BIO */
 
 /* START PHOTO */
 
@@ -189,7 +201,6 @@ a{
  .photo-appear div{
     right: 0;
 }
-
 .text-container{
     align-self: flex-start;
     position: relative;
@@ -206,16 +217,15 @@ a{
     border: 2px solid rgba(237, 230, 230);
 }
 
-
 /* END PHOTO */
 
 
 /* START CONTACT FORM */
 
-.contact-button{
+/* .contact-button{
     border: none;
     font-size: .9rem;
-}
+} */
 
 /* END CONTACT FORM */
 

@@ -78,10 +78,13 @@ function photoSlide(){
 
 // SHOW BIO PARAGRAPH
 
+function paraSlide(){
+    $('.paragraph').parent().toggleClass('para-appear');
+}
 
 // END SHOW BIO PARAGRAPH
 
-
+$(document).ready(paraSlide);
 
 
 
