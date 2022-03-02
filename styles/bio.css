@@ -320,7 +320,7 @@ a{
 
 /* LANDSCAPE ON MOBILE SIZE ADJUSTMENT */
 
-@media (max-width: 640px) and (orientation: landscape){
+/* @media (max-width: 640px) and (orientation: landscape){ */
 
     /* MAY NEED ADJUSTMENTS AFTER BIO CONTENT UPDATED */
     /* .photo-container{
@@ -351,3 +351,11 @@ a{
 
 
 /* END LANDSCAPE ON MOBILE */
+
+
+/* SUPER-WIDE SCREEN */
+@media only screen and (min-width: 3172px){
+    .paragraph{
+        top: -30%;
+    }
+}
