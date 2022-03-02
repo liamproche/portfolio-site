@@ -35,10 +35,10 @@ header{
 
 /* FOR LAYOUT */
 
- /*header{
+ header{
     border: 2px solid red;
-} */
-/* body{
+} 
+ body{
     border: 2px solid orange;
 }
 main{
@@ -52,7 +52,7 @@ div{
 }
 header{
     background: white;
-} */
+}
 
 /* END LAYOUT */
 
@@ -137,6 +137,7 @@ a{
 .bio-content{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .link-container{
@@ -149,11 +150,12 @@ a{
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
     position: relative;
     /* places paragraph out of eyeshot */
-    left: 0vw;
     margin-left: 15vw;
-    animation-name: text-move;
+    /* animation-name: text-move;
     animation-duration: .8s;
-    animation-delay: .2s;
+    animation-delay: .2s; */
+    /* transition: all 2s; */
+    display: none;
     border: 2px solid rgba(237, 230, 230);
     border-right: none;
 }
@@ -167,22 +169,30 @@ a{
     width: 85vw;
     height: 35vw;
     display: flex;
+    position: relative;
+    right: 100%;
     align-items: center;
     justify-content: space-around;
+    background: rgba(0, 0, 0, .92);
+    background: linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
+    background: -moz-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     /* border-radius: 5px 120px 120px 5px; */
-    animation-name: photo-move;
+    /* animation-name: photo-move;
     animation-duration: .8s;
-    animation-delay: .2s;
-    position: relative;
+    animation-delay: .2s; */
+    /* transition: all 2s; */
     margin-top: 5%;
     border: 2px solid rgba(237, 230, 230);
     border-left: none;
 }
+ .photo-appear div{
+    right: 0;
+}
+
 .text-container{
     align-self: flex-start;
     position: relative;
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +201,6 @@ a{
 .text-container h2, .text-container h3{
     margin: 0 auto;
 }
-
 #headshot{
     width: 28vw;
     border: 2px solid rgba(237, 230, 230);
@@ -213,19 +222,19 @@ a{
 
 /* START ANIMATIONS */
 
-@keyframes text-move{
+/* @keyframes text-move{
     from{left: 85vw}
     to{left: 0vw}
 }
 @keyframes photo-move{
     from{right: 85vw}
     to{right: 0vw}
-}
+} */
 
 /* END ANIMATIONS */
 
 
-@media only screen and (min-width: 490px){
+@media only screen and (min-width: 480px){
     
     /* NAV */
     
@@ -264,19 +273,29 @@ a{
 
    /* END HEADER ADJUSTMENT */
 
-   /* PHOTO ADJUSTMENTS */
+
+
+}
+
+
+/* MID-SIZE SCREENS */
+
+@media only screen and (min-width: 734px){
+    /* PHOTO ADJUSTMENTS */
+
     .photo-container{
         height: 20vh;
         width: 50vw;
-    }
-    #headshot{
-        width: 18vh;
-    }
-    .text-container{
-        align-self: center;
-    }
-    .paragraph{
-        margin-left: 55%;
-    }
-  /* END PHOTO ADJUST */
+        }
+        #headshot{
+            width: 18vh;
+        }
+        .text-container{
+            align-self: center;
+        }
+        .paragraph{
+            margin-left: 55%;
+        }
+
+        /* END PHOTO ADJUST */
 }

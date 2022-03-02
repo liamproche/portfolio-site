@@ -40,7 +40,8 @@ $($projectText).on('click', (e)=>{
 
 
 //LANDING PAGE OPENING SEQUENCE START
-    $('.hero h1').on('click', ()=>{
+
+$('.hero h1').on('click', ()=>{
             console.log('clicked');
             $('.hero h1').css('pointer-events', 'none');
             $('.punctuation').fadeOut(()=>{
@@ -62,6 +63,15 @@ function jobAppear(){
     $('.hero h3').toggleClass('third-appear');
 };
 
-
 //LANDING PAGE OPENING SEQUENCE END
 
+
+//SHOW BIO PHOTO
+
+function photoSlide(){
+        $('.photo-container').parent().toggleClass('photo-appear');
+        console.log('clicked');
+}
+
+
+$(document).ready(photoSlide);
