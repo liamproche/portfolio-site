@@ -36,6 +36,7 @@ main{
     border: 2px solid purple;
 }
 
+
 /* BACKGROUND */
 
 main{
@@ -118,7 +119,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 40px;
     background: rgba(0, 0, 0, .94);
 }
 
@@ -128,7 +128,19 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.row-one{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row-two{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* END MAIN FLEXBOX */
@@ -137,8 +149,11 @@ a{
 /* PROJECT CONTAINERS */
 
 .project-container{
-    height: 375px;
-    width: 375px;
+    height: 325px;
+    width: 325px;
+    /* height: 250px;
+    width: 250px; */
+    /* width: 100%; */
     background: url(images/terminal-2.png);
     background-size: cover;
     background-position: center;
@@ -146,6 +161,7 @@ a{
     align-items: flex-end;
     cursor: pointer;
     margin: 0 auto;
+
 }
 .project-title{
     width: 100%;
@@ -158,24 +174,17 @@ a{
     font-size: .8rem;
 }
 #castle-battle-link{
-    height: 30px;
+    height: 25px;
 }
 #space-battle-link{
-    height: 30px;
+    height: 25px;
 }
 #ren-faire-link{
-    height: 30px;
+    height: 25px;
 }
 #landscaper-link{
-    height: 30px;
+    height: 25px;
 }
-/* END PROJECT GITHUB LINKS */
-
-
-/* END PROJECT CONTAINERS */
-
-
-
 
 
 /* FOOTER LINKS */
@@ -271,10 +280,22 @@ small .link-image{
         
     /* END SIDENAV MEDIA QUERIES */
 
-    
 
     /* HEADER ADJUSTMENTS */
     header{
         position: relative;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 839px) { 
+    /* FLEX ADJUSTMENT */
+    .row-one{
+        flex-direction: row;
+    }
+    .row-two{
+        flex-direction: row;
     }
 }
