@@ -26,8 +26,6 @@ $($x).on('click', ()=>{
     $($hamburger).css('opacity', '1');
 });
 
-//END NAV MENU
-
 
 //PROJECTS SLIDER PANELS START
 $($projectBox).on('click', (e)=>{
@@ -36,20 +34,21 @@ $($projectBox).on('click', (e)=>{
 });
 $($projectText).on('click', (e)=>{
     $(e.target).parent().parent().toggleClass('show-decription')
-})
+});
 
 
 //LANDING PAGE OPENING SEQUENCE START
 
-$('.hero h1').on('click', ()=>{
+$('.hero').on('click', ()=>{
             console.log('clicked');
             $('.hero h1').css('pointer-events', 'none');
             $('.punctuation').fadeOut(()=>{
                 $('.punctuation').text('. :-)').fadeIn();
             });
-            setTimeout(nameAppear, 1000)
+            navAppear();
+            setTimeout(nameAppear, 1000);
             setTimeout(jobAppear, 1800);
-    })
+    });
 
 
 //for name appear effect
@@ -62,6 +61,12 @@ function nameAppear(){
 function jobAppear(){
     $('.hero h3').toggleClass('third-appear');
 };
+
+//for nav appear
+function navAppear(){
+    $('header').toggleClass('nav-appear');
+};
+
 
 //LANDING PAGE OPENING SEQUENCE END
 
