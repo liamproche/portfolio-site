@@ -223,6 +223,7 @@ a{
 .project-text{
     color: white;
     background: rgba(0, 0, 0, .7);
+    font-family: 'Nunito Sans', sans-serif;
     pointer-events: none;
     padding: 15px;
     transition: height 2s ease-in-out;
