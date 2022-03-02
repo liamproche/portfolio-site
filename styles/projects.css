@@ -42,7 +42,6 @@ main{
 /* BACKGROUND */
 
 main{
-    background: black;
     background: url(images/test.jpg);
     background-size: cover;
 }
@@ -227,10 +226,14 @@ a{
     pointer-events: none;
     padding: 15px;
     transition: height 2s ease-in-out;
+    -webkit-transition: height 2s ease-in-out;
+    -moz-transition: height 2s ease-in-out;
     border: 2px solid white;
 }
 .project-text p{
     transition: height .5s ease-in-out;
+    -webkit-transition: height .5s ease-in-out;
+    -moz-transition: height .5s ease-in-out;
 }
 p{
     height: 40px;
@@ -240,6 +243,8 @@ small{
     font-size: 1rem;
     opacity: 0;
     transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
 }
 small .link-image{
     opacity: 0;

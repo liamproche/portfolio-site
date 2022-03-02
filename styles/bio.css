@@ -22,7 +22,7 @@ main{
     background-repeat: no-repeat;
 }
 .scrim{
-background: rgba(0, 0, 0, .9);
+background: rgba(0, 0, 0, .95);
 height: 100%;
 }
 
@@ -162,7 +162,11 @@ a{
     -webkit-animation-name: slide-para;
     -moz-animation-name: slide-para;
     animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
     border: 2px solid rgba(237, 230, 230);
     border-right: none;
 }
@@ -193,8 +197,9 @@ a{
     background: linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     background: -moz-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
-
     transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
     margin-top: 5%;
     border: 2px solid rgba(237, 230, 230);
     border-left: none;

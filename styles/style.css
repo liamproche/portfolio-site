@@ -41,6 +41,9 @@ header{
     display: flex;
     justify-content: flex-end;
 }
+
+/* FONT SIZING */
+
 h1{
     font-size: 5.4rem;
     cursor: pointer;
@@ -52,12 +55,16 @@ h3{
     font-size: 1.8rem;
 
 }
+
+/* END FONT SIZING */
+
+
 main{
     background: url(images/arches.jpg);
     background-size: cover;
 }
 nav{
-    width:100%;
+    width: 100%;
 }
 .hero{
     display: flex;
@@ -66,8 +73,9 @@ nav{
     height: 70vh;
     padding: 40px;
     color: white;
-    background: rgba(0, 0, 0, .94);
+    background: rgba(0, 0, 0, .96);
 }
+
 
 /* SIDE NAV */
 
@@ -159,6 +167,11 @@ a{
 .landing-page-text{
     opacity: 0;
     transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+}
+.hero h1{
+    margin-bottom: -15px;
 }
 .first-appear{
     opacity: 1;
@@ -182,6 +195,7 @@ a{
         height: 10vh; 
         width: 100%;
         position: static;
+        border: none;
     }
     li{
         margin-left: 5%
