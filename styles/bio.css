@@ -181,7 +181,7 @@ a{
     /* animation-name: photo-move;
     animation-duration: .8s;
     animation-delay: .2s; */
-    /* transition: all 2s; */
+    transition: all 2s;
     margin-top: 5%;
     border: 2px solid rgba(237, 230, 230);
     border-left: none;
