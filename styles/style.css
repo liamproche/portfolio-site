@@ -46,6 +46,8 @@ header{
 
 h1{
     font-size: 5.4rem;
+}
+.hero{
     cursor: pointer;
 }
 h2{

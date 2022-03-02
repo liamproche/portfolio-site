@@ -42,6 +42,7 @@ $($projectText).on('click', (e)=>{
 $('.hero').on('click', ()=>{
             console.log('clicked');
             $('.hero h1').css('pointer-events', 'none');
+            $('.hero').css('cursor', 'default');
             $('.punctuation').fadeOut(()=>{
                 $('.punctuation').text('. :-)').fadeIn();
             });

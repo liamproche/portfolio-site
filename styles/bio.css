@@ -262,7 +262,8 @@ a{
         width: 100%;
         /* My old foe thwrats me again! */
         position: relative;
-        }
+        border: none;    
+    }
     li{
         margin-left: 5%;
     }

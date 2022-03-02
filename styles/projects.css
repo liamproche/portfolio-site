@@ -14,7 +14,6 @@ body{
 header{
     background: white;
     height: 10vh;
-    border: 2px solid black;
 }
 
 /* END PAGE SETUP */
@@ -276,7 +275,8 @@ small .link-image{
         height: 15vh;
         height: 10vh; 
         width: 100%;
-        position: static;    
+        position: static;
+        border: none;    
     }
     li{
         margin: 0;
