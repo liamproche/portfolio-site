@@ -4,7 +4,6 @@
 }
 body{
     font-family: 'Fredoka', sans-serif;
-    /* background: -webkit-linear-gradient(135deg, #0000, #404040); */
     background-repeat: no-repeat;
     font-size: 18px;
 }
@@ -35,7 +34,7 @@ header{
 
 /* FOR LAYOUT */
 
- header{
+ /* header{
     border: 2px solid red;
 } 
  body{
@@ -52,7 +51,7 @@ div{
 }
 header{
     background: white;
-}
+} */
 
 /* END LAYOUT */
 
@@ -70,7 +69,6 @@ header{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border-right: 1px solid #ccc;
     transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
     -webkit-transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
     -moz-transition: all .3s cubic-bezier(0, 0.57, 0.74, 1.06);
@@ -163,7 +161,7 @@ a{
     animation-name: slide-para;
     -webkit-animation-name: slide-para;
     -moz-animation-name: slide-para;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     border: 2px solid rgba(237, 230, 230);
     border-right: none;
@@ -195,11 +193,8 @@ a{
     background: linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
     background: -moz-linear-gradient(135deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .92));
-    /* border-radius: 5px 120px 120px 5px; */
-    /* animation-name: photo-move;
-    animation-duration: .8s;
-    animation-delay: .2s; */
-    transition: all 2s;
+
+    transition: all 1s;
     margin-top: 5%;
     border: 2px solid rgba(237, 230, 230);
     border-left: none;

@@ -92,7 +92,6 @@ h2 a:hover{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border-right: 1px solid #ccc;
     transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
     -webkit-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
     -moz-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
