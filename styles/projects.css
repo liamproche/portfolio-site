@@ -166,6 +166,13 @@ a{
     margin: 0 auto;
 
 }
+#landscaper-container{
+    background: url(images/netscape\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 .project-title{
     width: 100%;
 }
