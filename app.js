@@ -73,5 +73,29 @@ function photoSlide(){
         console.log('clicked');
 }
 
+// END SHOW BIO PHOTO
 
+
+// SHOW BIO PARAGRAPH
+
+
+// END SHOW BIO PARAGRAPH
+
+
+
+
+
+//EXECUTES PHOTO AND PARAGRAPH SLIDE ON BIO PAGE LOAD
 $(document).ready(photoSlide);
+
+
+
+
+
+//CONTACT FORM
+
+// $('.email-button').on('click', ()=>{
+//    $('.contact-form').css('display', 'block')
+// })
+
+//END CONTACT FORM

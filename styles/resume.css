@@ -13,12 +13,7 @@ body{
 /* BACKGROUND */
 
 main{
-    /* background: rgba(0, 0 ,0, .3);
-    background: linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-    background: -webkit-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
-    background: -moz-linear-gradient(45deg,rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)); */
     background: url(images/zion-2.jpg);
-
 }
 
 .scrim{
@@ -57,10 +52,18 @@ main{
 /* END LAYOUT */
 
 
-/* TEXT-SIZING */
+/* FONTS */
 
 h1{
     font-size: 1.4rem;
+}
+h2 a{
+    color: white;
+    font-size: 1rem;
+}
+h2 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .company{
     font-size: 1.2rem;
@@ -72,7 +75,7 @@ h1{
     font-size: 1rem;
 }
 
-/* END TEXT-SIZING */
+/* END FONTS*/
 
 
 /*SIDE NAV BEGIN*/
@@ -188,6 +191,52 @@ a{
 /* END FOOTER LINKS */
 
 
+/* CONTACT FORM */
+/* .contact-form{
+    border: 2px solid teal;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    display: none;
+    transition: all 2s;
+}
+.text-input{
+    max-width: 60%;
+    margin: 5%;
+    margin-bottom: 2%;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: .8rem;
+}
+#email-message{
+    margin: 5%;
+}
+
+button{
+    font-family: 'Fredoka', sans-serif;
+}
+textarea{
+    font-family: 'Fredoka', sans-serif;
+}
+.email-button{
+    font-size: .8rem;
+}
+.submit-button{
+    align-self: center;
+    margin-left: 5%;
+}
+ */
+
+/* END CONTACT FORM */
+
+
 @media only screen and (min-width: 480px) {
         
         /* NAV */
@@ -235,8 +284,6 @@ a{
     .resume-secondary{
         display: block;
     }
-    header{
-    }
     /* IMPORTANT */
     .side-nav{
         position: relative;
@@ -262,6 +309,7 @@ a{
         align-items: center;
         padding-top: 5%;
         padding: 0;
+        position: relative;
     }
     .contact-info h1{
         padding: 0;
@@ -275,8 +323,10 @@ a{
     h1{
         font-size: 2.5rem;
     }
-    
-    
+    h2 a{
+        color: white;
+        font-size: 1.8rem;
+    }
     .title{
         margin-top: 8%;
     }
@@ -289,9 +339,6 @@ a{
 }
 
 
-
-
-
 /* LOSE FOR MOBILE */
 
 @media only screen and (max-width: 490px){
@@ -299,5 +346,3 @@ a{
         display: none;
     }
 }
-
-
