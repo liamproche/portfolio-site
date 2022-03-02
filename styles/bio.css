@@ -244,6 +244,8 @@ a{
         background: rgba(0, 0, 0, 0);
         height: 10vh; 
         width: 100%;
+        /* My old foe thwrats me again! */
+        position: relative;
         }
     li{
         margin-left: 5%;
