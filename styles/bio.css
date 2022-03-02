@@ -151,12 +151,17 @@ a{
 .paragraph{
     margin-top: 10%;
     padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
     background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    background: -moz-linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
     position: relative;
     /* places paragraph out of eyeshot */
     left: 100vw;
     display: none;
     animation-name: slide-para;
+    -webkit-animation-name: slide-para;
+    -moz-animation-name: slide-para;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     border: 2px solid rgba(237, 230, 230);

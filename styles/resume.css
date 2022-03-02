@@ -326,6 +326,7 @@ textarea{
     h2 a{
         color: white;
         font-size: 1.8rem;
+        text-decoration: underline;
     }
     .title{
         margin-top: 8%;
