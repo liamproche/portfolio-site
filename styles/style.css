@@ -34,9 +34,11 @@ nav{
 body{
     font-size: 18px;
     font-family: 'Fredoka', sans-serif;
+    height: 75vh;
 }
 header{
     background: white;
+    /* !!!!!!!!TESTING CHANGE */
     height: 10vh;
     display: flex;
     justify-content: flex-end;
@@ -49,6 +51,7 @@ h1{
 }
 .hero{
     cursor: pointer;
+    height: 75vh;
 }
 h2{
     font-size: 3.4rem;
@@ -72,10 +75,13 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70vh;
+    
+    /* !!!!!TESTING CHANGE */
+    /* height: 70vh; */
     padding: 40px;
     color: white;
     background: rgba(0, 0, 0, .96);
+    width: 100vw;
 }
 
 
@@ -162,6 +168,8 @@ a{
 .link-container img{
     height: 6vh;
     margin-left: 10px;
+    
+    /* !!!!!TESTING CHANGE */
     margin-top: 10%; 
 }
 
