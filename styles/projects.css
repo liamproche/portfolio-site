@@ -156,8 +156,8 @@ a{
 /* PROJECT CONTAINERS */
 
 .project-container{
-    height: 375px;
-    width: 375px;
+    height: 320px;
+    width: 320px;
     background: url(images/terminal-2.png);
     background-size: cover;
     background-position: center;

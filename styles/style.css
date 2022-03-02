@@ -131,7 +131,6 @@ a{
 }
 
 
-
 /* END GITHUB LINKS */
 
 
@@ -202,4 +201,16 @@ a{
         display: none;
     }
     /* END SIDENAV MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 409px){
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
 }
