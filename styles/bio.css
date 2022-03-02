@@ -10,7 +10,9 @@ body{
 h2{
     font-size: 2rem;
 }
-
+/* p{
+    font-size: 1.5rem;
+} */
 
 /* BACKGROUND IMAGE */
 
@@ -170,7 +172,6 @@ a{
     border: 2px solid rgba(237, 230, 230);
     border-right: none;
 }
-
 .para-appear .paragraph{
     display: block;
 }
@@ -292,17 +293,6 @@ a{
    /* END HEADER ADJUSTMENT */
 }
 
-/* LANDSCAPE ON MOBILE SIZE ADJUSTMENT */
-@media (min-width: 640px) and (max-width: 812px) and (orientation: landscape){
-    /* MAY NEED ADJUSTMENTS AFTER BIO CONTENT UPDATED */
-    .paragraph{
-        top: -30%;
-    }
-} 
-
-
-/* END LANDSCAPE ON MOBILE */
-
 
 
 /* MID-SIZE SCREENS */
@@ -326,3 +316,38 @@ a{
 
         /* END PHOTO ADJUST */
 }
+
+
+/* LANDSCAPE ON MOBILE SIZE ADJUSTMENT */
+
+@media (max-width: 640px) and (orientation: landscape){
+
+    /* MAY NEED ADJUSTMENTS AFTER BIO CONTENT UPDATED */
+    /* .photo-container{
+    width: 25vw;
+    }
+    .photo-container h2{
+        font-size: 1.8rem;
+    }
+    .photo-container h3{
+        font-size: 1.2rem
+    }
+    .paragraph{
+    margin: 0;
+    margin-left: 45%;
+    top: -100px;
+    }
+    .photo{
+    
+    }
+    #headshot{
+        height: 15vw;
+        width: 15vw;
+    }
+    header{
+        background: red;
+    }
+}  */
+
+
+/* END LANDSCAPE ON MOBILE */
