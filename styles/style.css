@@ -108,6 +108,7 @@ nav{
 }
 .nav-appear nav{
     opacity: 1;
+    transition: all 5s;
 }
 .menu-image{
     height: 38px;
