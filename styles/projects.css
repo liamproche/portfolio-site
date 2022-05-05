@@ -151,7 +151,6 @@ a{
 
 
 /* PROJECT CONTAINERS */
-
 .project-container{
     height: 320px;
     width: 320px;
@@ -162,6 +161,14 @@ a{
     align-items: flex-end;
     cursor: pointer;
     margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#foster-journey-project-container{
+    background: url(images/foster-journey-project-photo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #landscaper-container{
@@ -169,12 +176,9 @@ a{
     background-position: center;
     background-size: cover;
 }
-
-
 .project-title{
     width: 100%;
 }
-
 
 /* PROJECT GITHUB LINKS */
 .check-out{
