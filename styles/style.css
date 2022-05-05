@@ -51,7 +51,7 @@ h3{
     z-index: 1;
 }
 nav{
-    opacity: 0;
+    opacity: 1;
 }
 .show-nav{
     right: 0;
@@ -101,11 +101,9 @@ nav{
     background: rgba(0, 0, 0, .96);
     cursor: pointer;
 }
-.hero{
-   
- 
+#job-title{
+    margin-top: 1%;
 }
-
 /* FOOTER LINKS */
 .link-container{
     display: flex;
