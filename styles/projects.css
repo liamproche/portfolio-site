@@ -180,15 +180,31 @@ a{
     width: 100%;
 }
 
-/* PROJECT GITHUB LINKS */
+/* PROJECT LINKS */
+.deployed-link{
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 5%;
+}
 .check-out{
     color: white;
     font-size: .8rem;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-#castle-battle-link{
+.project-github-links-container{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+.direct-link-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.direct-link{
     height: 25px;
+    border: 1px solid white;
 }
 #space-battle-link{
     height: 25px;
@@ -199,7 +215,6 @@ a{
 #landscaper-link{
     height: 25px;
 }
-
 
 /* FOOTER LINKS */
 
@@ -241,6 +256,7 @@ a{
 p{
     height: 40px;
     font-size: 2rem;
+    line-height: 1.6rem;
 }
 small{
     font-size: 1rem;
@@ -252,10 +268,6 @@ small{
 small .link-image{
     opacity: 0;
 }
-#castle-battle-link{
-    margin-top: 5%;
-    margin-left: 10%;
-}
 .show-description #castle-battle-link{
     opacity: 1;
 }
@@ -265,15 +277,10 @@ small .link-image{
 .show-description small{
     opacity: 1;
 }
-
 /* END SLIDE PANELS */
 
-
 @media only screen and (min-width: 490px) {  
-    
-    
-    /* NAV */
-        
+    /* NAV */  
     .side-nav{
         right: 0;
         height: 15vh;
