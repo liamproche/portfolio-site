@@ -18,7 +18,7 @@ main{
 }
 
 .scrim{
-    background: rgba(0, 0, 0, .94);
+    background: rgba(0, 0, 0, .97);
 }
 header{
     height: 10vh;
@@ -171,7 +171,7 @@ a{
 .resume-primary{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding-left: 5%;
 }
@@ -179,12 +179,8 @@ a{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 .resume-secondary{
     display: none;
-}
-.essential-ul li{
-    margin-top: 5%;
 }
 
 /* END GRID SECTION */
@@ -255,7 +251,19 @@ textarea{
 
 /* END CONTACT FORM */
 
-
+.skills-content{
+    margin-bottom: 7%;
+}
+.secondary-title{
+    font-size: 1.3rem;
+}
+.title-link{
+    color: white;
+    margin-top: 5%;
+}
+.title-link:hover{
+    text-decoration: underline;
+}
 @media only screen and (min-width: 480px) {
         
         /* NAV */
@@ -368,6 +376,12 @@ textarea{
 
     /* END TEXT SIZING */
 
+}
+.section-title{
+    font-size: 1.6rem;
+}
+.secondary-title{
+    margin-top: 5%;
 }
 
 
