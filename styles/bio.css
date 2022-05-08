@@ -329,6 +329,13 @@ a{
     h3{
         font-size: 1.3rem;
     }
+    .photo-container{
+        height: 20vh;
+        width: 50vw;
+        }
+        #headshot{
+            width: 18vh;
+        }
 } 
 /* END LANDSCAPE ON MOBILE */
 
