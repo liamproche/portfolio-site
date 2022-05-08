@@ -10,9 +10,6 @@ body{
 h2{
     font-size: 2rem;
 }
-/* p{
-    font-size: 1.5rem;
-} */
 
 /* BACKGROUND IMAGE */
 
@@ -319,37 +316,20 @@ a{
 
 
 /* LANDSCAPE ON MOBILE SIZE ADJUSTMENT */
-
-/* @media (max-width: 640px) and (orientation: landscape){ */
-
-    /* MAY NEED ADJUSTMENTS AFTER BIO CONTENT UPDATED */
-    /* .photo-container{
-    width: 25vw;
-    }
-    .photo-container h2{
-        font-size: 1.8rem;
-    }
-    .photo-container h3{
-        font-size: 1.2rem
-    }
+@media (max-width: 995px) and (orientation: landscape){
     .paragraph{
-    margin: 0;
-    margin-left: 45%;
-    top: -100px;
+        margin-left: 20%;
+        font-size: .8rem;
+        top: -10%;
+        padding: 5px;
     }
-    .photo{
-    
+    h2{
+        font-size: 1.5rem;
     }
-    #headshot{
-        height: 15vw;
-        width: 15vw;
+    h3{
+        font-size: 1.3rem;
     }
-    header{
-        background: red;
-    }
-}  */
-
-
+} 
 /* END LANDSCAPE ON MOBILE */
 
 
