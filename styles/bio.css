@@ -214,6 +214,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: space-around;
+    width: 100%;
 }
 .text-container h2, .text-container h3{
     margin: 0 auto;
