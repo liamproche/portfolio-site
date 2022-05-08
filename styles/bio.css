@@ -250,6 +250,14 @@ a{
 /* END ANIMATIONS */
 
 
+@media only screen and (max-width: 390px){
+    h3{
+        font-size: 1rem;
+    }
+}
+
+
+
 @media only screen and (min-width: 480px){
     
     /* NAV */
@@ -295,7 +303,6 @@ a{
 
 
 /* MID-SIZE SCREENS */
-
 @media only screen and (min-width: 734px){
     /* PHOTO ADJUSTMENTS */
 
