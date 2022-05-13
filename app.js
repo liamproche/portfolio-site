@@ -28,25 +28,23 @@ $($projectText).on('click', (e)=>{
 
 //LANDING PAGE OPENING SEQUENCE START
 $('.hero').on('click', ()=>{
-            console.log('clicked');
             $('.hero h1').css('pointer-events', 'none');
             $('.hero').css('cursor', 'default');
             $('.punctuation').fadeOut(()=>{
                 $('.punctuation').text('. :-)').fadeIn();
             });
-            navAppear();
             setTimeout(nameAppear, 1000);
-            setTimeout(jobAppear, 1800);
+            setTimeout(jobAppear, 1600);
     });
 
 //NAME APPEAR EFFECT
 function nameAppear(){
-    $('.hero h2').toggleClass('second-appear');
+    $('.hero h2').css('opacity', '1');
 };
 
 //JOB TITLE APPEAR EFFECT
 function jobAppear(){
-    $('.hero h3').toggleClass('third-appear');
+    $('.hero h3').css('opacity', '1');
 };
 
 //NAV APPEAR
@@ -58,11 +56,9 @@ function navAppear(){
 
 
 //SHOW BIO PHOTO
-
 function photoSlide(){
         $('.photo-container').parent().toggleClass('photo-appear');
 }
-
 // END SHOW BIO PHOTO
 
 

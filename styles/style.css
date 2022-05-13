@@ -125,16 +125,12 @@ nav{
 /* TITLE APPEAR */
 
 .landing-page-text{
-    opacity: 0;
     transition: all 2s;
     -webkit-transition: all 2s;
     -moz-transition: all 2s;
 }
 .hero h1{
     margin-bottom: -15px;
-}
-.first-appear, .second-appear, .third-appear{
-    opacity: 1;
 }
 .punctuation{
     font-family:'Varela Round', sans-serif;

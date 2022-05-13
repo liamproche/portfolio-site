@@ -121,9 +121,6 @@ a{
     justify-content: space-around;
     background: rgba(0, 0, 0, .99);
 }
-#first-wrapper{
-    margin-top: 15%;
-}
 
 
 .wrapper{
@@ -131,7 +128,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15%;
+    margin-top: 10%;
 }
 
 .row-one{
