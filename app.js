@@ -18,13 +18,12 @@ $($x).on('click', ()=>{
 });
 
 //PROJECTS SLIDER PANELS START
-$($projectBox).on('click', (e)=>{
+$($projectBox).on('mouseenter', (e)=>{
     $(e.target).toggleClass('show-description');
-    console.log('clicked')
 });
-$($projectText).on('click', (e)=>{
-    $(e.target).parent().parent().toggleClass('show-decription')
-});
+$($projectBox).on('mouseleave', (e)=>{
+    $(e.target).toggleClass('show-description')
+})
 
 //LANDING PAGE OPENING SEQUENCE START
 $('.hero').on('click', ()=>{
