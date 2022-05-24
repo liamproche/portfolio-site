@@ -20,9 +20,11 @@ $($x).on('click', ()=>{
 //PROJECTS SLIDER PANELS START
 $($projectBox).on('mouseenter', (e)=>{
     $(e.target).toggleClass('show-description');
+    $(e.target.querySelector('small')).css('opacity', '1')
 });
 $($projectBox).on('mouseleave', (e)=>{
     $(e.target).toggleClass('show-description')
+    $(e.target.querySelector('small')).css('opacity', '0')
 })
 
 //LANDING PAGE OPENING SEQUENCE START
