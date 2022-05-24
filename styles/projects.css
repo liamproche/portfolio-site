@@ -143,7 +143,6 @@ a{
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 2.5%;
     margin-bottom: 5%;
 }
 
@@ -156,7 +155,6 @@ a{
     width: 320px;
     display: flex;
     align-items: flex-end;
-    cursor: pointer;
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 10px;
@@ -241,15 +239,12 @@ a{
     font-family: 'Nunito Sans', sans-serif;
     pointer-events: none;
     padding: 15px;
-    transition: height 2s ease-in-out;
-    -webkit-transition: height 2s ease-in-out;
-    -moz-transition: height 2s ease-in-out;
     border: 2px solid white;
 }
 .project-text p{
-    transition: height .5s ease-in-out;
-    -webkit-transition: height .5s ease-in-out;
-    -moz-transition: height .5s ease-in-out;
+    transition: height .4s ease-in-out;
+    -webkit-transition: height .4s ease-in-out;
+    -moz-transition: height .4s ease-in-out;
 }
 p{
     height: 40px;
@@ -259,15 +254,12 @@ p{
 small{
     font-size: 1rem;
     opacity: 0;
-    transition: opacity .3s ease-in;
-    -webkit-transition: opacity .3s ease-in;
-    -moz-transition: opacity .3s ease-in;
+    transition: opacity .245s ease-in;
+    -webkit-transition: opacity .245s ease-in;
+    -moz-transition: opacity .245s ease-in;
 }
 small .link-image{
     opacity: 0;
-}
-.show-description #castle-battle-link{
-    opacity: 1;
 }
 .show-description p{
     height: 200px;
