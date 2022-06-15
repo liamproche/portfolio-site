@@ -1,12 +1,15 @@
-Description and code:
-First portfolio site created in html, css and javascript. 
+<h1>Personal Portfolio Site</h1>
 
-Approach:
-Extreme-minimalist design that is flexible to grow and add to over time
+<h2>Technologies Used</h2>
+<ul>
+    <li>HTML/HTML5</li>
+    <li>CSS/CSS3</li>
+    <li>Javascript/ES6</li>
+    <li>JQuery</li>
+</ul>
 
-Unsolved issues:
-Bio page layout on iphone landscape-mode hoping to fix with media query
+<h2>Approach:</h2>
+<p>Extreme-minimalist design that is flexible to grow and add to over time</p>
 
-Live link:
-https://liamproche.github.io/
-
+<h2>Live link:</h2>
+<a href="https://www.liamproche.com/">https://www.liamproche.com/</a>
