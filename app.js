@@ -28,15 +28,18 @@ $($projectBox).on('mouseleave', (e)=>{
 })
 
 //LANDING PAGE OPENING SEQUENCE START
-$('.hero').on('click', ()=>{
-            $('.hero h1').css('pointer-events', 'none');
-            $('.hero').css('cursor', 'default');
-            $('.punctuation').fadeOut(()=>{
-                $('.punctuation').text('. :-)').fadeIn();
-            });
-            setTimeout(nameAppear, 1000);
-            setTimeout(jobAppear, 1600);
+$('.document').ready( ()=>{
+            setTimeout(puctuationChange, 1000)
+            setTimeout(nameAppear, 2400);
+            setTimeout(jobAppear, 3200);
     });
+
+//PUNCTUATION CHANGE
+function puctuationChange(){
+    $('.punctuation').fadeOut(()=>{
+        $('.punctuation').text('. :-)').fadeIn();
+    });
+}
 
 //NAME APPEAR EFFECT
 function nameAppear(){
