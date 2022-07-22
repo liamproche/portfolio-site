@@ -161,6 +161,12 @@ a{
     border: 2px solid white;
     border-radius: 10px;
 }
+#safe-portal-project-container{
+    background: url(images/safe-portal-project-image.png);
+    background-position: center;
+    background-size: cover;
+    cursor: default;
+}
 #foster-journey-project-container{
     background: url(images/foster-journey-project-photo.png);
     background-position: center;
