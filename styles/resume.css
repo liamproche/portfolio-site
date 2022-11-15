@@ -72,7 +72,7 @@ h2 a:hover{
     font-size: 1rem;
 }
 .dates{
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 
 /* END FONTS*/
@@ -160,19 +160,20 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: auto;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
+    margin-left: 5%;
     border: 2px solid red;
 }
 
 .resume-primary{
     display: flex;
     flex-direction: column;
+    padding-left: 7%;
     /* align-items: flex-start; */
-    /* padding-left: 15%; */
     border: 2px solid blue;
-    margin: 0 auto;
 }
+
 .resume-secondary{
     display: none;
 }
@@ -376,10 +377,10 @@ textarea{
 
 }
 .section-title{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 .secondary-title{
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 /* LOSE FOR MOBILE */
