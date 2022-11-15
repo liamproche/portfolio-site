@@ -156,7 +156,6 @@ a{
     width: 320px;
     display: flex;
     align-items: flex-end;
-    cursor: pointer;
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 10px;
@@ -165,7 +164,6 @@ a{
     background: url(images/safe-portal-project-image.png);
     background-position: center;
     background-size: cover;
-    cursor: default;
 }
 #foster-journey-project-container{
     background: url(images/foster-journey-project-photo.png);
